@@ -1,0 +1,77 @@
+.project{
+  margin: 5rem 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    .content {
+      background-color: var(--accent-color2);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 3rem;
+      border-radius: 2rem;
+      .image {
+        align-items: center;
+        margin-left: 135px;
+        width: 100%;
+        img {
+        }
+      }
+      .title {
+        color: var(--accent-color1);
+        font-size: 1rem;
+        margin-left: 135px;
+      }
+      .description {
+        color: var(--accent-color3);
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+      }
+      .button{
+        
+        background-color: #a686e3;
+        width: 235px;
+        height: 35px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0.5em;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        box-shadow: 1pc;
+        color: white;
+        padding: 6px ;
+        margin-left: 135px;
+        
+      }
+      .popup-container{
+        .button-pay {
+            margin-top: 20px;
+            background-color: darkgoldenrod;
+          }
+          #btn{
+            background-color: darkgoldenrod;
+          }
+
+      }
+      
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .project {
+    margin: 0;
+    .container {
+      grid-template-columns: 1fr;
+      gap: 0;
+      .content {
+        padding: 1rem 2rem;
+        border-radius: 0;
+        &:nth-of-type(2) {
+          background-color: var(--background);
+        }
+      }
+    }
+  }
+}
